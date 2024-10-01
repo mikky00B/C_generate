@@ -127,7 +127,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # cohere
-COHERE_API_KEY = "5DOqYlRlHFSbmtqzXLWFOp5nYBnSWDYRUhLZ0d6U"
+COHERE_API_KEY = "your api key"
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
