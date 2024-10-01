@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Generate Content{% endblock %}
+
+{% block content %}
+<div class="mt-5">
+    <h1 class="text-center mb-4">Generate AI Content</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="POST" class="shadow p-4 bg-light rounded">
+                {% csrf_token %}
+                <div class="mb-3">
+                    {{ form.content_type|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    {{ form.prompt|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    {{ form.tone|as_crispy_field }}
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Generate</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% if generated_content %}
+<div class="mt-5">
+    <h3 class="text-center">Generated Content</h3>
+    <div class="card mt-4">
+        <div class="card-body">
+            <pre>{{ generated_content }}</pre>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

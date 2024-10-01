@@ -1,0 +1,12 @@
+Title: AI-Powered Content Generator with PDF Export and User Analytics C_generator
+
+Description: This AI-powered content generation web application allows users to create high-quality content based on specific prompts, tones, and content types (e.g., blog posts, product descriptions, social media captions). Built using Django and Cohere AI API, the app offers an intuitive user experience for generating content with AI assistance.
+
+Key features include:
+
+User Authentication: Users can register, log in, and manage their generated content history.
+AI-Powered Content Generation: Leverages Cohere's language model to generate customized content in different tones (e.g., formal, casual) and types.
+Content History & Export: Users can view their previously generated content and export it as a downloadable PDF.
+Analytics Dashboard: Provides insights on the most commonly generated content types, helping users optimize their workflow.
+Multi-Language Support: Content generation available in multiple languages to cater to a global audience.
+This project showcases the integration of AI APIs, PDF rendering, and user authentication, demonstrating skills in building practical, scalable web applications with a focus on UX and analytics.

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Content PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ content.content_type }} - Generated Content</h1>
+    <p><strong>Prompt:</strong> {{ content.prompt }}</p>
+    <p><strong>Tone:</strong> {{ content.tone }}</p>
+    <h2>Generated Text</h2>
+    <p>{{ content.generated_text }}</p>
+    <p><em>Generated on {{ content.created_at }}</em></p>
+</body>
+</html>
